@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+{% load static %}
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="{% static 'dist/css/adminlte.min.css' %}">
+  <link rel="stylesheet" href="{% static 'dist/css/style.css' %}">
+
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <!-- <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <div class="col-md-12">
+    <div class="wraper" style="width: 100%;">
+        <div class="text">
+            <h1 class="logo">Record and Coins</h1>
+        </div>
+        <div class="images">
+        <a class="navbar-signin" href="#">
+            <img src="{% static 'images/signin 1.svg' %}" class="image1">
+        </a>
+
+        <a class="navbar-join" href="#">
+            <img src="{% static 'images/join.svg' %}" class="image2">
+        </a>
+    </div>
+ </div>
+ </div>
+ </nav> -->
+ <nav class="navbar navbar-expand-sm">
+
+        <div class="wraper" style="width: 100%;">
+            <div class="text">
+                <h1 class="logo">Record and Coins</h1>
+            </div>
+      
+        <div class="images">
+        <a class="navbar-signin" href="#">
+            <img src="{% static 'images/signin 1.svg' %}" class="image1">
+        </a>
+
+        <a class="navbar-join" href="#">
+            <img src="{% static 'images/join.svg' %}" class="image2">
+        </a>
+    </div>
+        
+
+    </nav>
+
+<!--content-body-->
+    <div class="content">
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <p>Welcome to the only site that allows you (an individual) to raise money directly while giving
+                    your supporters the chance to make money too.
+                    </p>
+            </div>
+
+            <div class="col-sm-6">
+                <img src="{% static 'images\content1.svg' %}">
+            </div>
+        </div>
+          <!-- /.col-md-6 -->
+          
+
+          <!-- /.col-md-6 -->
+        </div>
+              <div class="container">
+                <div class="row">
+            <div class="col-sm-6">
+          <button type="button" class="btn btn-warning" style="color: #fff; font-size: 20px;"><a href="{% url 'signup' %}">Join now </button>
+          </div>
+          </div>
+<!-- /.row --> </div><!-- /.container -->
+      
+    </div>
+
+    <div class="content1">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="{% static 'images\content2.svg' %}">
+                </div>
+                <div class="col-sm-6">
+                    <p>Now, supporters can buy virtual shares of you and then trade it between themselves 
+                        based on your successes.
+
+                        </p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  
+
+  <!-- Main Footer -->
+  <footer class="page-footer blue pt-4" style="background-color: #192841;"></footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="{% static 'dist/js/jquery.js' %}"></script>
+<!-- <script src="plugins/jquery/jquery.min.js"></script> -->
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="{% static 'dist/js/adminlte.min.js' %}"></script>
+</body>
+</html>
